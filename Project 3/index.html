@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On key press</title>
+</head>
+
+<style>
+
+body
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 200px;
+    flex-direction: column;
+    background-color: aqua;
+}
+
+#btn
+{
+    background-color: azure;
+    height: 40px;
+    width: 300px;
+    font-size: 18px;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+</style>
+
+<body >
+    
+    <h1>On Key Events</h1>
+
+    <button id="btn" onkeypress="keyPress()" onclick="chngColor()">Click Here And Press Key</button>
+<script>
+
+function keyPress()
+{
+    alert("Key is pressed...")
+}
+
+function chngColor()
+{
+    let btn=document.getElementById("btn")
+    btn.style.backgroundColor="Deeppink"
+    btn.style.color="white"
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click and Double Click Events</title>
+</head>
+
+
+<style>
+body
+{
+    background-color: #e209f5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+button
+{
+    height: 50px;
+    width: 400px;
+    margin: 50px;
+    border-radius: 50px;
+    background-color: rgb(233, 178, 199);
+    font-size: 18px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+
+
+</style>
+
+<body>
+    
+   
+        <button id="button1" onclick="changeColor()"  onkeypress="changeColor()">Click Here To Change The Color </button>
+         <button id="button2" ondblclick="resetColor()">Double-Click To Reset Changes</Button> </button>
+
+
+         <script src="script.js"></script>
+
+</body>
+
+
+</html>
